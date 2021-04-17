@@ -1,0 +1,4 @@
+tr.user-admin-status-closed td {
+	text-decoration: line-through;
+	color: var(--muted);
+}

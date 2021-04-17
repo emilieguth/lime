@@ -1,0 +1,132 @@
+#notifications-pagination {
+	margin: 1rem 0 2rem;
+}
+
+
+a.notification {
+	display: flex;
+	width: 100%;
+	min-width: 100%;
+	color: #595959;
+	padding: 1rem 1.5rem;
+	border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 575px) {
+	a.notification {
+		padding: 1rem 0.5rem;
+	}
+}
+
+a.notification-unclicked {
+	background-color: #fafafa;
+}
+
+a.notification-unread {
+	background-color: #fafaff;
+}
+
+a.notification:hover {
+	text-decoration: none;
+	background-color: var(--background-global);
+}
+
+a.notification div.notification-image {
+	width: 60px;
+	height: 60px;
+	min-width: 60px;
+	margin-right: 1rem;
+	position: relative;
+}
+
+a.notification div.notification-image > div.notification-image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 60px;
+	min-width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+a.notification div.notification-image > div.notification-icon {
+	right: -3px;
+	top: 3px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 0.9rem;
+	line-height: 0.8rem;
+}
+
+a.notification div.notification-text {
+	width: 100%;
+}
+
+
+a.notification div.notification-text > div.notification-message {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+a.notification div.notification-text > div.notification-message > div.notification-message-date {
+	width: 40px;
+	min-width: 40px;
+	margin-left: 0.5rem;
+	color: var(--muted);
+	font-size: 0.875rem;
+	text-align: right;
+}
+
+@media (min-width: 576px) {
+	a.notification div.notification-text > div.notification-message > div.notification-message-date {
+		width: 60px;
+		min-width: 60px;
+	}
+}
+
+a.notification div.notification-text > div.notification-bottom {
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+
+a.notification div.notification-text > div.notification-bottom > div.notification-bottom-users {
+	display: flex;
+}
+
+a.notification div.notification-text > div.notification-bottom > div.notification-bottom-users > div {
+	margin-right: 0.5rem;
+}
+
+
+a.notification div.notification-text > div.notification-bottom > div.notification-bottom-link {
+	text-align: right;
+}
+
+div.notifications-title {
+	padding: 1.5rem 0;
+}
+div.notifications-title h1 {
+	font-size: 2rem;
+}
+div.notifications-title > * {
+	margin: 0.5rem 0;
+}
+
+@media (min-width: 576px) {
+	div.notifications-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}

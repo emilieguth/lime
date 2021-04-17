@@ -1,0 +1,7 @@
+{
+  "name": "emilieguth/lime",
+  "description": "Lime framework",
+  "require": {
+    "php": ">=7.4"
+  }
+}

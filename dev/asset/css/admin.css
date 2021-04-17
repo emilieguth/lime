@@ -1,0 +1,12 @@
+div.admin-dev-close {
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+div.admin-dev-close > form {
+	background-color: var(--background-global);
+	padding: 1rem;
+	border-radius: 0.3rem;
+	max-width: 400px;
+}

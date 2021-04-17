@@ -1,0 +1,93 @@
+
+/* Forum header */
+#paper-header {
+	max-width: 2000px;
+	margin: auto;
+	height: 360px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: rgba(100, 100, 100, 0.3);
+	background-position: center center;
+	background-size: cover;
+}
+
+#paper-header h1 a {
+	text-decoration: none;
+}
+
+#paper-header div.paper-header-upload {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	cursor: pointer;
+	font-size: 3rem;
+}
+
+#paper-header div.forum-cover-image-upload i {
+	color: white;
+	line-height: 1;
+}
+
+#paper-header-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 1rem 0;
+	flex: 1;
+}
+
+#paper-header-content h1 a,
+#paper-header-content h4 a {
+	color: white;
+}
+
+#paper-header > div.container {
+	width: 100%;
+}
+
+#paper-header h1 {
+	margin: 0.5rem 0 1rem;
+	text-align: center;
+}
+
+@media (max-width: 575px) {
+
+	#paper-header h1 {
+		font-size: 2rem;
+	}
+
+}
+
+#paper-header h4 {
+	color: white;
+	margin: 0;
+}
+
+#paper-header h4 a:hover {
+	text-decoration: underline;
+}
+
+#paper-header div.paper-header-description {
+	color: white;
+	font-weight: 200;
+	max-width: 600px;
+	line-height: 1.4;
+	margin-bottom: 1rem;
+}
+
+#paper-header div.paper-header-description p {
+	text-align: center;
+}
+
+#paper-header div.paper-header-actions {
+	display: flex;
+	margin-top: 1rem;
+}
+
+#paper-header div.paper-header-actions > * {
+	margin: 0.5rem;
+}

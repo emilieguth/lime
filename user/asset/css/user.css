@@ -1,0 +1,128 @@
+#header-login a {
+	color: white;
+}
+
+.login-form,
+.signup-form {
+	max-width: 500px;
+	margin: auto;
+}
+
+header .login-form,
+header .signup-form {
+	margin: auto;
+	padding: 0 1rem;
+}
+
+.login-teasing {
+	max-width: 500px;
+	margin: 1rem auto 0 auto;
+	text-align: center;
+}
+
+.login-form div.row > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.login-submit {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.login-submit .login-forgotten-password {
+	text-align: right;
+	font-size: 0.9rem;
+}
+
+.login-form label {
+	font-size: 0.875rem;
+}
+
+.login-form .form-control-label {
+	padding: 0;
+}
+
+#panel-forgotten-password {
+	z-index: 1000000;
+}
+
+#link-forgotten-password {
+	font-size: 0.9rem;
+}
+
+/* E-mail verified */
+div.user-light {
+	margin-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.user-light h1 {
+	margin-bottom: 1.5rem;
+}
+
+div.user-light h4 {
+	margin: 0rem 0 3rem;
+	color: #666;
+}
+
+div.user-light-actions a {
+	margin: 0 0.5rem;
+}
+
+
+/* User settings  */
+
+div.user-settings-list {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 575px) {
+
+	div.user-settings-list {
+		grid-template-columns: 1fr;
+	}
+
+}
+
+@media (max-width: 575px) and (max-width: 991px) {
+
+	div.user-settings-list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+div.user-settings-list > a.user-settings-element {
+	height: 150px;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: var(--radius);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	transition: color 0.25s, background-color 0.25s, border-color 0.25s, box-shadow 0.25s;
+	text-decoration: none;
+}
+div.user-settings-list > a.user-settings-element.disabled {
+	opacity: 0.3;
+}
+
+div.user-settings-list > a.user-settings-element span {
+	word-wrap: break-word;
+	line-height: 1.4;
+	font-size: 0.9rem;
+}
+
+div.user-settings-list > a.user-settings-element h4 {
+	margin: 0;
+	color: white;
+}

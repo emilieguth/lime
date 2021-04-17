@@ -1,0 +1,44 @@
+#draft-message-fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	box-shadow: 0px -2px 4px rgba(150, 150, 150, 0.2);
+	background-color: #fafafa;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+	z-index: 501; /* Pour passer au dessus des bulles de localisation */
+}
+
+@media (max-width: 575px) {
+
+	#draft-message-fixed {
+		font-size: 0.9rem;
+		padding: 0.375rem 0.75rem;
+	}
+
+}
+
+#draft-message-save {
+	display: none;
+}
+
+#draft-message-save i,
+#draft-message-text i,
+.draft-message-info i {
+	margin-right: 0.5rem;
+}
+
+#draft-message-text {
+	font-weight: lighter;
+	letter-spacing: 0;
+}
+
+#draft-message-save a,
+#draft-message-text a,
+.draft-message-info a {
+	color: #222;
+	letter-spacing: 0;
+}
